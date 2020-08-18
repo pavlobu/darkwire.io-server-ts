@@ -77,7 +77,7 @@ export default class Socket implements SocketOPTS {
   joinRoom(roomId: string, socket: Io.Socket) {
     return new Promise((resolve, reject) => {
       if (getStore().hasSocketAdapter) {
-        // TODO: what the fuck is this?
+        // TODO: what is this?
         // getIO()
         //   .of('/')
         //   .adapter.remoteJoin(socket.id, roomId, (err: Error) => {
