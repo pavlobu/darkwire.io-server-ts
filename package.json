@@ -1,0 +1,45 @@
+{
+  "name": "darkwire-io-server-ts",
+  "version": "1.0.0",
+  "description": "darkwire io server v2.0.0 in typescript ",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit1",
+    "start": "nodemon dist/index.js",
+    "start:prod": "tsc && pm2 start dist/index.js --name darkwire-io-server",
+    "stop:prod": "pm2 stop darkwire-io-server"
+  },
+  "dependencies": {
+    "@types/koa-send": "^4.1.2",
+    "@types/koa-static": "^4.0.1",
+    "@types/lodash": "^4.14.159",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "kcors": "^2.2.2",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.4.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.20",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.27.0",
+    "pm2": "^4.4.1",
+    "redis": "^3.0.2",
+    "socket.io": "^2.3.0",
+    "socket.io-redis": "^5.3.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/jest": "^26.0.10",
+    "@types/kcors": "^2.2.3",
+    "@types/koa": "^2.11.4",
+    "@types/koa-router": "^7.4.1",
+    "@types/node": "^13.13.2",
+    "@types/socket.io": "^2.1.11",
+    "nodemon": "^2.0.3"
+  }
+}
