@@ -6,6 +6,8 @@ This is a darkwire.io server translated to typescript,
 right now it only supports
 **memory based store** (no Redis support as in original darkwire.io !)
 
+## darkwire.io client that DOES NOT require https and using node-forge instead of window.crypto.subtle can be found [here](https://github.com/pavlobu/darkwire.io/tree/master/client) !
+
 ## prerequisites:
 
 you need to have globally installed:
